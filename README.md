@@ -8,4 +8,4 @@
 - I ran the model notebook using Kaggle's GPU accelerator. One may run it on another accelerator.
 
 ## Conclusions (for the meanwhile)
-- After the first training with 3 epochs (ResNet) I saw that in the 3rd epoch, both the validation loss and error_rate raised a bit, which probably means that the model is overfitted, so I decided to change the number of epochs to 2.
+- After the first training with 3 epochs (ResNet18) I saw that in the 3rd epoch, both the validation loss and error_rate raised a bit, which probably means that the model is overfitted, so I decided to change the number of epochs to 2.
