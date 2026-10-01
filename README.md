@@ -8,7 +8,7 @@
 - First training:
 <img width="355" height="213" alt="image" src="https://github.com/user-attachments/assets/6ecb6a7e-9ce7-461a-8370-e4cfa9065e5e" />
 
-With seed=42: in the 4th epoch, both the validation loss and error_rate raised a bit, which probably means that the model is overfitted, so I decided to change the number of epochs to 3.
+With seed=42: in the 4th epoch, both the validation loss and error rate raised a bit while the train loss decreased, which probably means that the model is overfitted, so I decided to change the number of epochs to 3.
 
 
 ## Notes
