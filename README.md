@@ -12,4 +12,4 @@ With seed=42: in the 4th epoch, both the validation loss and error rate raised a
 
 
 ## Notes
-- I ran the model notebook using Kaggle's GPU accelerator. One may run it on another accelerator.
+- I ran the model notebook using Kaggle's GPU T4 x2 accelerator. One may run it on another accelerator but different results are expected.
