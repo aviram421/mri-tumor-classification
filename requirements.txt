@@ -1,0 +1,8 @@
+fastai==2.8.12
+fastcore==2.2.33
+fastdownload==0.0.8
+kagglehub==1.0.2
+matplotlib==3.11.2
+nbdev==3.3.25
+numpy==2.5.4
+opencv_python==5.0.0.93
