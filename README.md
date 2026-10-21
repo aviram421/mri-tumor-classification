@@ -42,6 +42,14 @@ Here's the confusion matrix of the last fine-tuned model:
 
 <img width="467" height="489" alt="image" src="https://github.com/user-attachments/assets/062b615c-36eb-4402-affa-46e2ae76fd36" />
 
+## 🔮 Future Work
+
+* **Transitioning to 3D Scans:** Working with DICOM or NIfTI files instead of 2D slices. This will give the model better spatial information and higher resolution, which might help it separate glioma from meningioma more accurately.
+* **Better Preprocessing:** Cropping the black background around the brain as much as possible before resizing. This will help the model focus on the real tissue patterns and make the training more efficient.
+* **Manual Intensity Normalization:** Plotting pixel intensity histograms to normalize the images manually, making sure the model handles scans from different machines better.
+* **Using Grad-CAM:** Visualizing the images with Grad-CAM after training to verify that the model is actually looking at the tumor region and not just learning background noise.
+* **Web App Deployment:** Deploying the exported `model.pkl` to a working web app using Streamlit.
+
 
 ## 📂 Repository Structure
 ```text
@@ -72,11 +80,3 @@ pip install -r requirements.txt
 2. **Train the model:** Run the `tumor-classification-model.ipynb` notebook to execute the whole training pipeline and view different experiments.
 
 > **Note on Hardware:** It is highly recommended to run the `tumor-classification-model.ipynb` in a GPU-based environment (such as Kaggle or Google Colab). I trained the model using Colab's **GPU T4** accelerator. Running it on a different accelerator is possible, but different results or training times are to be expected.
-
-## 🔮 Future Work
-
-* **Transitioning to 3D Scans:** Working with DICOM or NIfTI files instead of 2D slices. This will give the model better spatial information and higher resolution, which might help it separate glioma from meningioma more accurately.
-* **Better Preprocessing:** Cropping the black background around the brain as much as possible before resizing. This will help the model focus on the real tissue patterns and make the training more efficient.
-* **Manual Intensity Normalization:** Plotting pixel intensity histograms to normalize the images manually, making sure the model handles scans from different machines better.
-* **Using Grad-CAM:** Visualizing the images with Grad-CAM after training to verify that the model is actually looking at the tumor region and not just learning background noise.
-* **Web App Deployment:** Deploying the exported `model.pkl` to a working web app using Streamlit.
