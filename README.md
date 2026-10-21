@@ -28,7 +28,7 @@ Here's an example for a small batch of scans, as shown in the model notebook:
 
 ## 📊 Dataset
 The model is trained on the [Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/data) via Kaggle.
-* **Format:** MRI Jpg images.
+* **Format:** MRI JPG images.
 * **Warning / Note on Data Leakage:** The author of this dataset doesn't explicitly mention if there might be scans from the same patient in both the train and test sets, so patient-level data leakage is possible.
 
 ## 🚀 Results & Performance
