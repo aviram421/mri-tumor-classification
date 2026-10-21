@@ -14,7 +14,8 @@ Classifying brain tumors accurately from MRI scans is a critical step in medical
 4. **No Tumor**
 
 Here's an example for a small batch of scans, as shown in the model notebook:
-![alt text](image-1.png)
+<img width="716" height="735" alt="image" src="https://github.com/user-attachments/assets/a1e21bf2-74a1-4ae8-b8ec-b98421d497ee" />
+
 
 **Key Technical Highlights:**
 * **Medical Data Integrity (Resizing):** Explored different image resizing techniques. Chose **Zero-Padding** over squishing (which distorts proportions) or random cropping (which can crop out the tumor itself) to preserve the true aspect ratio.
@@ -39,7 +40,8 @@ After experimenting with multiple training strategies, learning rates, and data 
 
 Here's the confusion matrix of the last fine-tuned model:
 
-![alt text](image.png)
+<img width="467" height="489" alt="image" src="https://github.com/user-attachments/assets/062b615c-36eb-4402-affa-46e2ae76fd36" />
+
 
 ## 📂 Repository Structure
 ```text
