@@ -54,6 +54,7 @@ Here's the confusion matrix of the last fine-tuned model:
 ├── model.pkl                              # Exported trained model weights
 ├── requirements.txt                       # Project dependencies
 └── README.md                              # Project documentation
+```
 
 ## How to Run
 Make sure you have Python 3.13 installed. I created a requirements.txt file which you can run in your preferred environment to install the exact dependcies I used with the following bash command:
