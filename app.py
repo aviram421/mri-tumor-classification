@@ -16,7 +16,7 @@ drive.mount("/content/drive")
 learn = load_learner('/content/drive/MyDrive/mri-tumor/model.pkl')
 
 # %% app.ipynb #cf14199b
-categories = ('glioma', 'meningioma', 'notumor', 'pituitary')
+categories = learn.dls.vocab
 
 def classify_image(img_destination: str) -> None:
     """
