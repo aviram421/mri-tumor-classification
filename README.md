@@ -70,13 +70,6 @@ It is highly recommended to run the tumor-classification-model.ipynb in a GPU-ba
 
 Note: I ran the model notebook using Colab's GPU T4 accelerator. One may run it on another accelerator but different results are expected.
 
-## Future Work
-- Work with DICOM scans in order to achieve 3D representation, and thus achieve a higher resolution and spatial information.
-- Extend the preprocessing pipeline, so the black background around the brain is cut as much as possible. Thus the model will be able to learn the real patterns more efficiently and the resizing of the images won't affect them a lot.
-- Plot a histogram of the intensities for manual normalization of the images.
-- Visualize images with Grad-CAM after training, in order to see if the model learns the patterns mostly from the tumor region.
-- Deploy my model to a working app using the Streamlit API.
-
 ## 🔮 Future Work
 
 * **Transitioning to 3D Scans:** Working with DICOM or NIfTI files instead of 2D slices. This will give the model better spatial information and higher resolution, which might help it separate glioma from meningioma more accurately.
