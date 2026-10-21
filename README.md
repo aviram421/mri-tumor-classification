@@ -14,8 +14,10 @@ Classifying brain tumors accurately from MRI scans is a critical step in medical
 4. **No Tumor**
 
 Here's an example for a small batch of scans, as shown in the model notebook:
-<img width="716" height="735" alt="image" src="https://github.com/user-attachments/assets/a1e21bf2-74a1-4ae8-b8ec-b98421d497ee" />
 
+<p align="center">
+  <img width="600" alt="image" src="https://github.com/user-attachments/assets/a1e21bf2-74a1-4ae8-b8ec-b98421d497ee" />
+</p>
 
 **Key Technical Highlights:**
 * **Medical Data Integrity (Resizing):** Explored different image resizing techniques. Chose **Zero-Padding** over squishing (which distorts proportions) or random cropping (which can crop out the tumor itself) to preserve the true aspect ratio.
@@ -30,6 +32,15 @@ The model is trained on the [Brain Tumor MRI Dataset](https://www.kaggle.com/dat
 * **Warning / Note on Data Leakage:** The author of this dataset doesn't explicitly mention if there might be scans from the same patient in both the train and test sets, so patient-level data leakage is possible.
 
 ## 🚀 Results & Performance
+
+After some initial training experiments, these were the images with the highest loss (plotted using `plot_top_losses`):
+
+<p align="center">
+  <img width="750" alt="image" src="https://github.com/user-attachments/assets/492bd54a-48d0-43e2-ba3a-e8c442d256e0" />
+</p>
+
+Upon inspecting these results, I identified and removed several duplicate scans from the dataset.
+
 After experimenting with multiple training strategies, learning rates, and data augmentations (`aug_transforms`), the final fine-tuned model achieved excellent generalization on the validation set.
 
 * **Final Error Rate:** ~3.69% (Accuracy of **~96.3%**)
@@ -40,7 +51,9 @@ After experimenting with multiple training strategies, learning rates, and data 
 
 Here's the confusion matrix of the last fine-tuned model:
 
-<img width="467" height="489" alt="image" src="https://github.com/user-attachments/assets/062b615c-36eb-4402-affa-46e2ae76fd36" />
+<p align="center">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/062b615c-36eb-4402-affa-46e2ae76fd36" />
+</p>
 
 ## 🔮 Future Work
 
