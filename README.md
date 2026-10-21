@@ -56,19 +56,22 @@ Here's the confusion matrix of the last fine-tuned model:
 └── README.md                              # Project documentation
 ```
 
-## How to Run
-Make sure you have Python 3.13 installed. I created a requirements.txt file which you can run in your preferred environment to install the exact dependcies I used with the following bash command:
-**pip install -r requirements.txt**
+## 🛠️ How to Run
 
-Execution
+### Prerequisites
+Make sure you have Python 3.13 installed. I created a `requirements.txt` file which you can run in your preferred environment to install the exact dependencies I used with the following bash command:
 
-1. Explore the Dataset: Run the mri-tumor-classification - EDA.ipynb notebook to see initial image properties and dataset structure, as well as class balance.
+```bash
+pip install -r requirements.txt
+```
 
-2. Train the model: Run the tumor-classification-model.ipynb to run the whole training pipeline, as well as different experiments.
+### Execution
 
-It is highly recommended to run the tumor-classification-model.ipynb in a GPU-based environment such as Kaggle/Colab.
+1. **Explore the Dataset:** Run the `mri-tumor-classification - EDA.ipynb` notebook to see initial image properties, dataset structure, and class class balance.
 
-Note: I ran the model notebook using Colab's GPU T4 accelerator. One may run it on another accelerator but different results are expected.
+2. **Train the model:** Run the `tumor-classification-model.ipynb` notebook to execute the whole training pipeline and view different experiments.
+
+> **Note on Hardware:** It is highly recommended to run the `tumor-classification-model.ipynb` in a GPU-based environment (such as Kaggle or Google Colab). I trained the model using Colab's **GPU T4** accelerator. Running it on a different accelerator is possible, but different results or training times are to be expected.
 
 ## 🔮 Future Work
 
