@@ -9,23 +9,25 @@ def train_model(num_epochs: int, dls: DataLoaders) -> Learner:
     Fine tunes resnet18 model with dls object and error rate metric.
     
     Arguments:
-        num_epochs(int): the desired number of epochs for the fine tuning.
+        num_epochs (int): the desired number of epochs for the fine tuning.
+        dls (DaataLoaders)
 
     Returns:
-        learn(Learner): A vision learner trained on the MRI scans and ResNet18 model.
+        learn (Learner): A vision learner trained on the MRI scans and ResNet18 model.
     """
     learn = vision_learner(dls, resnet18, metrics=error_rate)
     learn.fine_tune(num_epochs)
     return learn
 
 
-def predict_tumor_type(img_destination: str) -> None:
+def predict_tumor_type(img_destination: str, learn: Learner) -> None:
     """
     Creates prediction of the image label and prints it as well as
     the confidence of the model it's actually the label of the image.
 
     Arguments:
         img_destination (str): The image path inside the current working directory.
+        learn (Learner)
 
     Returns:
         None
