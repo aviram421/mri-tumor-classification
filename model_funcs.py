@@ -4,7 +4,7 @@ from fastai.vision.all import *
 from fastai.vision.widgets import *
 import shutil
 
-def train_model(num_epochs: int) -> Learner:
+def train_model(num_epochs: int, dls: DataLoaders) -> Learner:
     """
     Fine tunes resnet18 model with dls object and error rate metric.
     
