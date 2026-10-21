@@ -35,7 +35,7 @@ def predict_tumor_type(img_destination: str) -> None:
     print(f'Probability it\'s a brain with {prediction}: {probs[pred_idx]:.3f}')
 
     
-def update_transformations(data_block: DataBlock, new_item_tfms: List, new_batch_tfms=None, path) -> DataLoaders:
+def update_transformations(data_block: DataBlock, new_item_tfms: List, path, new_batch_tfms=None) -> DataLoaders:
     """
     Creates a new DataBlock with new resizing and/or augmentation item_tfms for the 
     data_block input, shows a batch with 9 images and returns a dataloaders object based on the new datablock.
