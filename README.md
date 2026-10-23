@@ -88,7 +88,7 @@ pip install -r requirements.txt
 
 ### Execution
 
-1. **Explore the Dataset:** Run the `mri-tumor-classification - EDA.ipynb` notebook to see initial image properties, dataset structure, and class class balance.
+1. **Explore the Dataset:** Run the `mri-tumor-classification - EDA.ipynb` notebook to see initial image properties, dataset structure, and class balance.
 
 2. **Train the model:** Run the `tumor-classification-model.ipynb` notebook to execute the whole training pipeline and view different experiments.
 
